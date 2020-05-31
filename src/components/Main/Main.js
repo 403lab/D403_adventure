@@ -1,6 +1,8 @@
 import React from 'react';
 // import '../../stylesheets/Main.css'
-import { Button } from 'reactstrap';
+import { Button, Alert } from 'react-bootstrap';
+import Header from '../Header/Header.js';
+
 
 
 class Main extends React.Component {
@@ -14,13 +16,15 @@ class Main extends React.Component {
 
   componentDidMount() 
   {
-    console.log("Mounted.")
+    console.log("Main Mounted.")
     // this.props.history.push("/");
   }
+
 
   render() {
     return (
       <div className="Main">
+        <Header />
         <Button />
       </div>
     );
