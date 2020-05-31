@@ -1,5 +1,6 @@
 import React from 'react';
 // import '../../stylesheets/Main.css'
+import { Button } from 'reactstrap';
 
 
 class Main extends React.Component {
@@ -14,12 +15,13 @@ class Main extends React.Component {
   componentDidMount() 
   {
     console.log("Mounted.")
-    this.props.history.push("/login");
+    // this.props.history.push("/");
   }
 
   render() {
     return (
       <div className="Main">
+        <Button />
       </div>
     );
   }
