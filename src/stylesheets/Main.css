@@ -1,0 +1,7 @@
+.card {
+  width: 100%;
+}
+.noPadding {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}

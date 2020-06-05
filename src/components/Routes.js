@@ -4,13 +4,16 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 
 
-import Main from "./Main/Main.js";
+import Mapper from "./Mapper/Mapper.js";
 import Header from "./Header/Header.js";
+import Main from "./Main/Main.js";
+
 // App.js에 있던 Aladin, LionKing, SpiderMan을
 // Components/Routes.js 로 이동
 export default () => (
   <Router>
-    <Route exact path="/" component={Main} />
-    <Route exact path="/header" component={Header} />
+    <Route exact path="/" component={Mapper} />
+    <Route path="/main" component={Main} />
+    <Route path="/header" component={Header} />
   </Router>
 );

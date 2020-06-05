@@ -18,6 +18,7 @@ class Header extends React.Component {
     console.log("Header Props")
     console.log(props);
     this.state = {
+      title: props.title
     }
 
   }
@@ -50,9 +51,12 @@ class Header extends React.Component {
   render() {
     return (
       <div className="Header">
-        <Navbar className="navbar-use" bg="light" expand="lg">
-          <Navbar.Brand className="logo" href="#home">
-              <h1>React-Bootstrap</h1>
+        <Navbar className="navbar-use" bg="dark" expand="lg">
+          <Navbar.Brand className="text-white" onClick={() => { window.history.back()}}>
+            <h4>BACK</h4>
+          </Navbar.Brand>
+          <Navbar.Brand className="logo text-white" href="/">
+              <h1>D403's Adventure - {this.state.title}</h1>
             </Navbar.Brand>
           
             

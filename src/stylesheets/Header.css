@@ -6,7 +6,7 @@
 .logo {
   position: absolute;
   left: 50%;
-  margin-left: -140px !important;
+  margin-left: -240px !important;
   /* 50% of your logo width */
   display: block;
 }
